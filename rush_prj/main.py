@@ -9,7 +9,7 @@ def main():
         "....",
     ]
     # ตั้งให้เบี้ยอยู่ด้านล่าง
-    checkmate.print_result(board1, pawn_moves_down=True)
+    checkmate.print_result(board1)
 
     board2 = [
         "....",
@@ -17,7 +17,8 @@ def main():
         "....",
         "..R.",
     ]
-    checkmate.print_result(board2, pawn_moves_down=True)
+    checkmate.print_result(board2)
+
 
     #ลองทำ string หลายบรรทัด
     s = """
@@ -28,5 +29,5 @@ def main():
     .....
     """
     board3 = checkmate.parse_board_from_string(s)
-    checkmate.print_result(board3, pawn_moves_down=True)
+    checkmate.print_result(board3)
 main()
