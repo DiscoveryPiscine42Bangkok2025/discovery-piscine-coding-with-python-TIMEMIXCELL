@@ -6,11 +6,12 @@ def main():
         print("none")
         return
     s = args[0]
-    found = False
-    for i in s:
-        if i == 'z':
-            print("z")
-            found = True
-    if not found:
+    result = ""
+    for ch in s:
+        if ch == 'z':
+            result += "z"
+    if result:
+        print(result)
+    else:
         print("none")
 main()
